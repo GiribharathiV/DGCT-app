@@ -4,9 +4,9 @@ services:
     name: education-dashboard
     runtime: node
     buildCommand: npm install && npm run build
-    startCommand: npx serve -s dist
+    startCommand: npx serve -s dist -l $PORT
     envVars:
       - key: NODE_VERSION
         value: 18
       - key: PORT
-        value: 10000
+        value: 8081
